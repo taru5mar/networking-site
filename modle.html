@@ -1,0 +1,105 @@
+<!DOCTYPE HTML  >
+<html>
+<head>
+<META charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>module</title>
+<link rel="stylesheet" href="new 3.css"/>
+</head>
+<body>
+
+
+<div class="header">
+
+<div class="header-logo">networking tutorials</div>
+</header>
+<div class="header-list">
+  <ul>
+  <li><a href="_blank">about</a></li>
+  <li><a href="_blank">lessons</a></li>
+  <li><a href="file:///C:/Users/TUSHAR/Desktop/contact.html">contact us</a></li>
+ </ul>
+</div>
+<div class="main">
+  <div class="copy-container">
+  <br>
+  </div>
+  </div>
+  <h2><center>Computer Network Models</center></h2><br>
+<p>A communication subsystem is a complex piece of Hardware and software. Early attempts for implementing the software for such subsystems were based on a single, complex, unstructured program with many interacting components. The resultant software was very difficult to test and modify. To overcome such problem, the ISO has developed a layered approach. In a layered approach, networking concept is divided into several layers, and each layer is assigned a particular task. Therefore, we can say that networking tasks depend upon the layers.
+</p>
+<h2><center>Layered Architecture</center></h2><br>
+<p>-The main aim of the layered architecture is to divide the design into small pieces.<br>
+-Each lower layer adds its services to the higher layer to provide a full set of services to manage communications and run the applications.
+<br>-It provides modularity and clear interfaces, i.e., provides interaction between subsystems.<br>
+-It ensures the independence between layers by providing the services from lower to higher layer without defining how the services are implemented. Therefore, any modification in a layer will not affect the other layers.
+<br>-The number of layers, functions, contents of each layer will vary from network to network. However, the purpose of each layer is to provide the service from lower to a higher layer and hiding the details from the layers of how the services are implemented.
+<br>-The basic elements of layered architecture are services, protocols, and interfaces.
+<br><strong>Service:</strong>It is a set of actions that a layer provides to the higher layer.
+<br><strong>Protocol:</strong>It defines a set of rules that a layer uses to exchange the information with peer entity. These rules mainly concern about both the contents and order of the messages used.
+<br><strong>Interface:</strong>It is a way through which the message is transferred from one layer to another layer.
+</p><br><br>
+<fieldset>
+<h2><center>TCP/IP MODEL</center></h2><br>
+</fieldset>
+<div>
+<p><strong>-</strong>The TCP/IP model was developed prior to the OSI model.<br>
+<strong>-</strong>The TCP/IP model is not exactly similar to the OSI model.<br>
+<br><strong>-</strong>The TCP/IP model consists of five layers: the application layer, transport layer, network layer, data link layer and physical layer.
+<br><strong>-</strong>The first four layers provide physical standards, network interface, internetworking, and transport functions that correspond to the first four layers of the OSI model and these four layers are represented in TCP/IP model by a single layer called the application layer.
+<br><strong>-</strong>TCP/IP is a hierarchical protocol made up of interactive modules, and each of them provides specific functionality.
+<br>Here, hierarchical means that each upper-layer protocol is supported by two or more lower-level protocols.
+ </p></div>
+ 
+ <div>
+ <img src="https://static.javatpoint.com/tutorial/computer-network/images/tcp-ip-model.png">
+ </div>
+ <h2><center>Network Access Layer</center></h2><br>
+<p>-A network layer is the lowest layer of the TCP/IP model.<br>
+-A network layer is the combination of the Physical layer and Data Link layer defined in the OSI reference model.<br>
+-It defines how the data should be sent physically through the network.<br>
+-This layer is mainly responsible for the transmission of the data between two devices on the same network.<br>
+-The functions carried out by this layer are encapsulating the IP datagram into frames transmitted by the network and mapping of IP addresses into physical addresses.
+<br>-The protocols used by this layer are ethernet, token ring, FDDI, X.25, frame relay.<br><br>
+<h2><center>Internet Layer</center></h2><br><br>
+<p>-An internet layer is the second layer of the TCP/IP model.<br>
+-An internet layer is also known as the network layer.<br>
+-The main responsibility of the internet layer is to send the packets from any network, and they arrive at the destination irrespective of the route they take.
+</p><br><br>
+<h2><center>Transport Layer</center></h2><br><br>
+<p>The transport layer is responsible for the reliability, flow control, and correction of data which is being sent over the network.
+The two protocols used in the transport layer are User Datagram protocol and Transmission control protocol.
+</p><br>
+<h2><center>Application Layer</center></h2><br>
+<p>-An application layer is the topmost layer in the TCP/IP model.<br>
+-It is responsible for handling high-level protocols, issues of representation.<br>
+-This layer allows the user to interact with the application.<br>
+-When one application layer protocol wants to communicate with another application layer, it forwards its data to the transport layer.
+<br>-There is an ambiguity occurs in the application layer. Every application cannot be placed inside the application layer except those who interact with the communication system. For example: text editor cannot be considered in application layer while web browser using HTTP protocol to interact with the network where HTTP protocol is an application layer protocol.
+</p><br><br>
+<fieldset>
+<h2><center>OSI MODEL</center></h2><br>
+</fieldset>
+<p>-OSI stands for Open System Interconnection is a reference model that describes how information from a software application in one computer moves through a physical medium to the software application in another computer.
+<br>-OSI consists of seven layers, and each layer performs a particular network function.
+<br>-OSI model was developed by the International Organization for Standardization (ISO) in 1984, and it is now considered as an architectural model for the inter-computer communications.
+<br>-OSI model divides the whole task into seven smaller and manageable tasks. Each layer is assigned a particular task.
+<br>-Each layer is self-contained, so that task assigned to each layer can be performed independently.
+ </p>
+ <div>
+ <img src="https://static.javatpoint.com/tutorial/computer-network/images/osi-model.png">
+ </div>
+ <div>
+ <img src="https://static.javatpoint.com/tutorial/computer-network/images/osi-model2.png">
+ </div>
+ <hr>
+<hr>
+ 
+ </p>
+  
+  
+  
+  
+  
+  </ol></div>
+</div></body></html>

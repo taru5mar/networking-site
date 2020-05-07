@@ -18,7 +18,8 @@ li{
 }
 .header-logo{
 float:left;
-color:white;}
+color:white;
+font-size:30px}
 .header-list li {
 	float:right;
 	padding:33px 20px;

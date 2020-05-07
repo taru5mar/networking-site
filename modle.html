@@ -3,7 +3,7 @@
 <head>
 <META charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>module</title>
+<title>models</title>
 <link rel="stylesheet" href="new 3.css"/>
 </head>
 <body>
@@ -17,14 +17,30 @@
   <ul>
   <li><a href="_blank">about</a></li>
   <li><a href="_blank">lessons</a></li>
-  <li><a href="file:///C:/Users/TUSHAR/Desktop/contact.html">contact us</a></li>
+  <li><a href="file:///C:/Users/TUSHAR/Desktop/contact.html" target="_blank">contact us</a></li>
  </ul>
 </div>
 <div class="main">
   <div class="copy-container">
+  <h2>1.models</h2>
+  
+<li><a href="#TCP/IP"> TCP/IP</a></li>
+<li><a href="#OSI">OSI</a></li>
+<h2>2.Network Layer</h2>
+<li><a href="#Network Addressing">Network Addressing</a></li>
+<li><a href="#Routing">Routing</a></li>
+<li><a href="#Network Layer Protocol">Network Layer Protocol</a></li>
+<h2>3.Application Protocol</h2>
+<li><a href="#HTTP">HTTP</a></li>
+<li><a href="#DNS">DNS</a></li>
+<li><a href="#SMTP">SMTP</a></li>
+<li><a href="#Telnet">Telnet</a></li>
+<li><a href="#FTP">FTP</a></li>
   <br>
   </div>
   </div>
+  
+  
   <h2><center>Computer Network Models</center></h2><br>
 <p>A communication subsystem is a complex piece of Hardware and software. Early attempts for implementing the software for such subsystems were based on a single, complex, unstructured program with many interacting components. The resultant software was very difficult to test and modify. To overcome such problem, the ISO has developed a layered approach. In a layered approach, networking concept is divided into several layers, and each layer is assigned a particular task. Therefore, we can say that networking tasks depend upon the layers.
 </p>
@@ -40,7 +56,7 @@
 <br><strong>Interface:</strong>It is a way through which the message is transferred from one layer to another layer.
 </p><br><br>
 <fieldset>
-<h2><center>TCP/IP MODEL</center></h2><br>
+<h2><center><a id="TCP/IP"></a>TCP/IP MODEL</center></h2><br>
 </fieldset>
 <div>
 <p><strong>-</strong>The TCP/IP model was developed prior to the OSI model.<br>
@@ -78,7 +94,7 @@ The two protocols used in the transport layer are User Datagram protocol and Tra
 <br>-There is an ambiguity occurs in the application layer. Every application cannot be placed inside the application layer except those who interact with the communication system. For example: text editor cannot be considered in application layer while web browser using HTTP protocol to interact with the network where HTTP protocol is an application layer protocol.
 </p><br><br>
 <fieldset>
-<h2><center>OSI MODEL</center></h2><br>
+<h2><center><a id="OSI"></a>OSI MODEL</center></h2><br>
 </fieldset>
 <p>-OSI stands for Open System Interconnection is a reference model that describes how information from a software application in one computer moves through a physical medium to the software application in another computer.
 <br>-OSI consists of seven layers, and each layer performs a particular network function.
@@ -96,6 +112,156 @@ The two protocols used in the transport layer are User Datagram protocol and Tra
 <hr>
  
  </p>
+ <h2><center><a id="Network Addressing"></a>Network Addressing</center></h2><br>
+<div>
+<p>
+-Network Addressing is one of the major responsibilities of the network layer.
+<br>-Network addresses are always logical, i.e., software-based addresses.
+<br>-A host is also known as end system that has one link to the network. The boundary between the host and link is known as an interface. Therefore, the host can have only one interface.
+<br>-A router is different from the host in that it has two or more links that connect to it. When a router forwards the datagram, then it forwards the packet to one of the links. The boundary between the router and link is known as an interface, and the router can have multiple interfaces, one for each of its links. Each interface is capable of sending and receiving the IP packets, so IP requires each interface to have an address.
+<br>-Each IP address is 32 bits long, and they are represented in the form of &quot;dot-decimal notation&quot; where each byte is written in the decimal form, and they are separated by the period. An IP address would look like 193.32.216.9 where 193 represents the decimal notation of first 8 bits of an address, 32 represents the decimal notation of second 8 bits of an address.
+</p>
+</div>
+<h2><center>Classful Addressing</center></h2><br><br>
+<p>An IP address is 32-bit long. An IP address is divided into sub-classes:<br>
+-Class A<br>
+-Class B<br>
+-Class C<br>
+-Class D<br>
+-Class E<br>
+An ip address is divided into two parts:<br>
+Network ID: It represents the number of networks.<br>
+Host ID: It represents the number of hosts.<br>
+</p>
+<div>
+ <img src="https://static.javatpoint.com/tutorial/computer-network/images/network-addressing2.png"><br><br>
+ </div>
+ <p>
+ In the above diagram, we observe that each class have a specific range of IP addresses. The class of IP address is used to determine the number of bits used in a class and number of networks and hosts available in the class.
+</p>
+<h2><center><a id="Routing"></a>Routing</center></h2><br><br>
+<p>-A Router is a process of selecting path along which the data can be transferred from source to the destination. Routing is performed by a special device known as a router.
+<br>-A Router works at the network layer in the OSI model and internet layer in TCP/IP model
+<br>-A router is a networking device that forwards the packet based on the information available in the packet header and forwarding table.
+<br>-The routing algorithms are used for routing the packets. The routing algorithm is nothing but a software responsible for deciding the optimal path through which packet can be transmitted.
+<br>-The routing protocols use the metric to determine the best path for the packet delivery. The metric is the standard of measurement such as hop count, bandwidth, delay, current load on the path, etc. used by the routing algorithm to determine the optimal path to the destination.
+<br>-The routing algorithm initializes and maintains the routing table for the process of path determination.
+</p>
+<h3><center>Types of Routing</center></h3><br>
+<p>-Routing can be classified into three categories:
+<br>-Static Routing
+<br>-Default Routing
+<br>-Dynamic Routing
+</p>
+<div>
+ <img src="https://static.javatpoint.com/tutorial/computer-network/images/routing.png"><br><br>
+ </div>
+ <fieldset>
+ <h2><center><a id="Network Layer Protocol"></a>Network Layer Protocols</center></h2><br>
+ </fieldset>
+ <p>TCP/IP supports the following protocols:</p>
+<h3><center> ARP</center></h3><br><br>
+<p>-ARP stands for Address Resolution Protocol.
+<br>-It is used to associate an IP address with the MAC address.
+<br>-Each device on the network is recognized by the MAC address imprinted on the NIC. Therefore, we can say that devices need the MAC address for communication on a local area network. MAC address can be changed easily. For example, if the NIC on a particular machine fails, the MAC address changes but IP address does not change. ARP is used to find the MAC address of the node when an internet address is known.
+</p>
+<p><strong><center>How ARP works</center></strong></p><br>
+<div>
+ <img src="https://static.javatpoint.com/tutorial/computer-network/images/network-layer-protocols.png">
+</div>
+<div>
+<img src="https://static.javatpoint.com/tutorial/computer-network/images/network-layer-protocols.png">
+</div>
+<h3><center>RARP</center></h3><br><br>
+<p>-RARP stands for Reverse Address Resolution Protocol.
+If the host wants to know its IP address, then it broadcast the RARP query packet that contains its physical address to the entire network. A RARP server on the network recognizes the RARP packet and responds back with the host IP address.
+The protocol which is used to obtain the IP address from a server is known as Reverse Address Resolution Protocol.
+The message format of the RARP protocol is similar to the ARP protocol.
+Like ARP frame, RARP frame is sent from one machine to another encapsulated in the data portion of a frame.
+</p>
+<div>
+<img src="https://static.javatpoint.com/tutorial/computer-network/images/network-layer-protocols4.png">
+</div>
+<h3><center>ICMP</center></h3><br><br>
+<p>ICMP stands for Internet Control Message Protocol.
+<br>-The ICMP is a network layer protocol used by hosts and routers to send the notifications of IP datagram problems back to the sender.
+<br>-ICMP uses echo test/reply to check whether the destination is reachable and responding.
+<br>-ICMP handles both control and error messages, but its main function is to report the error but not to correct them.
+<br>-An IP datagram contains the addresses of both source and destination, but it does not know the address of the previous router through which it has been passed. Due to this reason, ICMP can only send the messages to the source, but not to the immediate routers.
+<br>-ICMP protocol communicates the error messages to the sender. ICMP messages cause the errors to be returned back to the user processes.
+<br>-ICMP messages are transmitted within IP datagram.
+</p>
+<div>
+<img src="https://static.javatpoint.com/tutorial/computer-network/images/network-layer-protocols5.png">
+</div>
+<hr>
+<hr>
+
+<h2><center>Application Protocol</center></h2><br>
+<fieldset>
+<h3><center><a id="HTTP"></a>HTTP</center></h3><br><br>
+</fieldset>
+<p>-HTTP stands for HyperText Transfer Protocol.
+<br>-It is a protocol used to access the data on the World Wide Web (www).
+<br>-The HTTP protocol can be used to transfer the data in the form of plain text, hypertext, audio, video, and so on.
+<br>-This protocol is known as HyperText Transfer Protocol because of its efficiency that allows us to use in a hypertext environment where there are rapid jumps from one document to another document.
+<br>-HTTP is similar to the FTP as it also transfers the files from one host to another host. But, HTTP is simpler than FTP as HTTP uses only one connection, i.e., no control connection to transfer the files.
+<br>-HTTP is used to carry the data in the form of MIME-like format.
+<br>-HTTP is similar to SMTP as the data is transferred between client and server. The HTTP differs from the SMTP in the way the messages are sent from the client to the server and from server to the client. SMTP messages are stored and forwarded while HTTP messages are delivered immediately.
+</p>
+<h3><center>Features of HTTP:</center></h3><br><br>
+<p>-<strong>Connectionless protocol:</strong>HTTP is a connectionless protocol. HTTP client initiates a request and waits for a response from the server. When the server receives the request, the server processes the request and sends back the response to the HTTP client after which the client disconnects the connection. The connection between client and server exist only during the current request and response time only.
+<br>-<strong>Media independent:</strong>HTTP protocol is a media independent as data can be sent as long as both the client and server know how to handle the data content. It is required for both the client and server to specify the content type in MIME-type header.
+<br>-<strong>Stateless:</strong>HTTP is a stateless protocol as both the client and server know each other only during the current request. Due to this nature of the protocol, both the client and server do not retain the information between various requests of the web pages.
+</p>
+<fieldset>
+<h3><center><a id="DNS"></a>DNS</center></h3><br><br>
+</fieldset>
+<p>
+-An application layer protocol defines how the application processes running on different systems, pass the messages to each other.
+<br>-DNS stands for Domain Name System.
+<br>-DNS is a directory service that provides a mapping between the name of a host on the network and its numerical address.
+<br>-DNS is required for the functioning of the internet.
+<br>-Each node in a tree has a domain name, and a full domain name is a sequence of symbols specified by dots.
+<br>-DNS is a service that translates the domain name into IP addresses. This allows the users of networks to utilize user-friendly names when looking for other hosts instead of remembering the IP addresses.
+<br>-For example, suppose the FTP site at EduSoft had an IP address of 132.147.165.50, most people would reach this site by specifying <a href="http://ftp.EduSoft.com" target="_blank">ftp.EduSoft.com</a>. Therefore, the domain name is more reliable than IP address.
+</p>
+<fieldset>
+<h3><center><a id="SMTP"></a>SMTP</center></h3><br><br>
+</fieldset>
+<p>
+-SMTP stands for Simple Mail Transfer Protocol.
+<br>-SMTP is a set of communication guidelines that allow software to transmit an electronic mail over the internet is called Simple Mail Transfer Protocol.
+<br>-It is a program used for sending messages to other computer users based on e-mail addresses.
+<br>-It provides a mail exchange between users on the same or different computers, and it also supports:
+<br>-It can send a single message to one or more recipients.
+<br>-Sending message can include text, voice, video or graphics.
+<br>-It can also send the messages on networks outside the internet.
+<br>-The main purpose of SMTP is used to set up communication rules between servers. The servers have a way of identifying themselves and announcing what kind of communication they are trying to perform. They also have a way of handling the errors such as incorrect email address. For example, if the recipient address is wrong, then receiving server reply with an error message of some kind.
+</p>
+<fieldset>
+<h3><center><a id="Telnet"></a>TELNET</center></h3><br><br>
+</fieldset>
+<p>
+-The main task of the internet is to provide services to users. For example, users want to run different application programs at the remote site and transfers a result to the local site. This requires a client-server program such as FTP, SMTP. But this would not allow us to create a specific program for each demand.
+<br>-The better solution is to provide a general client-server program that lets the user access any application program on a remote computer. Therefore, a program that allows a user to log on to a remote computer. A popular client-server program Telnet is used to meet such demands. Telnet is an abbreviation for Terminal Network.
+<br>-Telnet provides a connection to the remote computer in such a way that a local terminal appears to be at the remote side.
+</p>
+<fieldset>
+<h3><center><a id="FTP"></a>FTP</center></h3><br><br>
+</fieldset>
+<p>
+-FTP stands for File transfer protocol.
+<br>-FTP is a standard internet protocol provided by TCP/IP used for transmitting the files from one host to another.
+<br>-It is mainly used for transferring the web page files from their creator to the computer that acts as a server for other computers on the internet.
+<br>-It is also used for downloading the files to computer from other servers.</p>
+<h3><center>Objectives of FTP:</center></h3>
+<p>-It provides the sharing of files.
+<br>-It is used to encourage the use of remote computers.
+<br>-It transfers the data more reliably and efficiently.
+</p>
+<hr>
+<hr>
   
   
   
